@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profiles with linked drive paths",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "username": { "type": "string" },
+        "displayName": { "type": "string" },
+        "nickname": { "type": "string" },
+        "aboutMe": { "type": "string" },
+        "email": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "role": { "type": "string" },
+        "linkedDrivePath": { "type": "string" },
+        "password": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "username", "email", "linkedDrivePath"]
+    },
+    "games": {
+      "title": "Games",
+      "description": "Games added per user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "version": { "type": "string" },
+        "fileSize": { "type": "string" },
+        "fileSizeBytes": { "type": "number" },
+        "steamripUrl": { "type": "string" },
+        "developer": { "type": "string" },
+        "genres": { "type": "array", "items": { "type": "string" } },
+        "overview": { "type": "string" },
+        "coverImage": { "type": "string" },
+        "status": { "type": "string" },
+        "favorite": { "type": "boolean" },
+        "dateAdded": { "type": "string" },
+        "lastUpdated": { "type": "string" }
+      },
+      "required": ["id", "userId", "title"]
+    }
+  }
+}

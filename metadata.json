@@ -1,0 +1,6 @@
+{
+  "name": "SteamRIP Library & Download Tracker",
+  "description": "Add and parse SteamRIP game links, track download progress, manage mirror hosts, and organize your personal gaming collection with a clean dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
